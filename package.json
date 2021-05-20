@@ -8,7 +8,7 @@
     "module": "dist/esm.js",
     "browser": "dist/umd.js",
     "files": [
-        "lib",
+        "dist",
         "example",
         "package.json",
         "README.md"
