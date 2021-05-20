@@ -11,3 +11,9 @@
 -   数据类型 type
 
 ```
+
+### 下载
+
+```
+npm install do-tools
+```
