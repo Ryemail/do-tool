@@ -1,6 +1,6 @@
 {
     "name": "do-tool",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "private": false,
     "license": "MIT",
     "author": "<1956045780@qq.com>",
@@ -13,6 +13,11 @@
         "package.json",
         "README.md"
     ],
+    "keywords": [
+        "do-tool",
+        "tool"
+    ],
+    "homepage": "https://github.com/Ryemail/do-tool#readme",
     "devDependencies": {
         "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.13.12",
@@ -29,7 +34,5 @@
         "build": "rollup --config",
         "doc": "typedoc --options typedoc.json"
     },
-    "dependencies": {
-        "core-js": "3"
-    }
+    "dependencies": {}
 }

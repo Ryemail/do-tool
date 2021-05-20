@@ -15,5 +15,5 @@
 ### 下载
 
 ```
-npm install do-tools
+npm install do-tool
 ```
