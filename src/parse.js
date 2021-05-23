@@ -1,3 +1,5 @@
+import { checkType } from './type';
+
 export function parseString(url) {
     const type = typeof url;
 
@@ -30,4 +32,26 @@ export function parseObject(object) {
     return Object.entries(search)
         .reduce((t, v) => `${t}${v[0]}=${v[1]}&`, '')
         .replace(/&$/, '');
+}
+
+export function parseKey(data, keys) {
+    const keyArr = keys.split('.');
+
+    for (let i = 0; i < keyArr.length; i++) {
+        data = data[keyArr[i]];
+
+        const isType = checkType(data);
+
+        if (isType('object') && !Object.keys(data).length) {
+            return null;
+        }
+
+        if (isType('array') && !data.length) {
+            return null;
+        }
+
+        if (!data) return null;
+    }
+
+    return data;
 }
