@@ -1,13 +1,13 @@
-export function dateFormat(times, fmt = 'yyyy-MM-dd') {
-    const d = new Date(times);
+export function dateFormat(date, fmt = "yyyy-MM-dd") {
+    const d = new Date(date);
 
     const o = {
-        'M+': d.getMonth() + 1, //月份
-        'd+': d.getDate(), //日
-        'h+': d.getHours(), //小时
-        'm+': d.getMinutes(), //分
-        's+': d.getSeconds(), //秒
-        'q+': Math.floor((d.getMonth() + 3) / 3), //季度
+        "M+": d.getMonth() + 1, //月份
+        "d+": d.getDate(), //日
+        "h+": d.getHours(), //小时
+        "m+": d.getMinutes(), //分
+        "s+": d.getSeconds(), //秒
+        "q+": Math.floor((d.getMonth() + 3) / 3), //季度
     };
 
     if (/(y+)/g.test(fmt))

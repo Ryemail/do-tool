@@ -9,11 +9,13 @@
     <body>
         <script src="../dist/umd.js"></script>
         <script>
-            var obj = { a: { b: { c: { d: [{ name: 'ruany', age: 24 }] } } } };
+            var obj = { a: { b: { c: { d: [{ name: "ruany", age: 24 }] } } } };
 
-            var b = { a: { b: { c: { d: [{ name: 'ruany', age: '24' }] } } } };
+            var b = { a: { b: { c: { d: [{ name: "ruany", age: "24" }] } } } };
 
-            console.log($doing.compare(obj, b));
+            // console.log($doing.parseEqual(obj, b));
+
+            console.log($doing.checkType(NaN)("number"));
         </script>
     </body>
 </html>

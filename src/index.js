@@ -1,23 +1,30 @@
-import { dateFormat } from './date';
-import { parseString, parseObject, parseKey } from './parse';
-import { formatNumber } from './number';
-import { getType, checkType } from './type';
-import { regEx, regMobile, regEmail, regCard } from './regexp';
-import { clone } from './clone';
-import { compare } from './compare';
+import { arrayToTree } from "./array";
 
-export default {
+import { dateFormat } from "./date";
+
+import { formatNumber } from "./number";
+
+import { getType, checkType } from "./type";
+
+import { clone } from "./clone";
+
+import { regEmail, regCard, regMobile, regEx } from "./regexp";
+
+import { parseEqual, parseKeys, parseObject, parseQuery } from "./object";
+
+export {
+    arrayToTree,
     dateFormat,
-    parseString,
-    parseObject,
-    parseKey,
     formatNumber,
     getType,
     checkType,
-    regEx,
-    regMobile,
+    parseEqual,
+    parseKeys,
+    parseObject,
+    parseQuery,
+    clone,
     regEmail,
     regCard,
-    clone,
-    compare,
+    regMobile,
+    regEx,
 };
