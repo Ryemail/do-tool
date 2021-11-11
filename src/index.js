@@ -12,6 +12,8 @@ import { regEmail, regCard, regMobile, regEx } from "./regexp";
 
 import { parseEqual, parseKeys, parseObject, parseQuery } from "./object";
 
+import { toLine, toHump } from "./hump2line";
+
 export {
     arrayToTree,
     dateFormat,
@@ -26,5 +28,7 @@ export {
     regEmail,
     regCard,
     regMobile,
+    toLine,
+    toHump,
     regEx,
 };
